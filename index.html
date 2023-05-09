@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="body-wrapper">
+      <!-- Gerardo HEADER -->
+
+    <header class="header">
+
+      <div class="header-group">
+  
+        <a href="#" class="header-logo" >
+          <img src="assets/icons/logo_gmail_text.png" alt="Gmail" >
+        </a>
+
+      </div>
+
+      <form class="header-search" action="">
+
+        <div class="icons-search">
+          <button id="js-header-search" class="btn btn-nofill tooltip"  data-info="Search">
+            <img src="assets/icons/search.png" alt="Search"class="btn-icon-btn-icon-alt-search">
+          </button>
+        </div>
+
+        <input type="search" class="header-search-input" placeholder="Buscar correo">
+
+      </form>
+
+      <div id="header-group-right" class="header-group profile" >
+          
+        <div class="icon-header">
+          <button class="btn" data-info="Settings">
+            <img src="assets/img/eye.svg" alt="Settings" id="header-eye" class="btn-icon-btn-icon-alt">
+          </button>
+        </div>
+
+        <div class="icon-header">
+          <button class="btn" data-info="Settings">
+            <img src="assets/img/Dummy.svg" alt="Settings" id="header-dummie" class="btn-icon-btn-icon-alt">
+          </button>
+        </div>
+
+        <div class="icons">
+            <button id="header-settings" class="btn" data-info="Settings">
+              <img src="assets/icons/Settings.png" alt="Settings"  class="btn-icon-btn-icon-alt">
+            </button>
+          </div>
+
+          <div id="icon-header" class="icons">
+            <button id="header-profile" class="btn tooltip" >
+              <img src="assets/img/User.svg" class="btn-icon header-profile">
+            </button>
+          </div>
+      </div>
+
+    </header>
+      <!-- Gerardo HEADER -->
+
+
+
+       <!-- Charlie LEFT SIDEBAR -->
+
+    <section class="left-sidebar">
+
+      <div class="left-sidebar-compose">
+        <button class="sidebar-btn-compose">
+          <img src="assets/icons/create_32dp.png" alt="Redactar un email" class="sidebar-btn-compose-icon">
+          <span class="sidebar-btn-compose-title">Redactar</span>
+        </button>
+      </div>
+
+      <div class="left-siderbar-label">
+        <ul class="labels category-item-list">
+
+          <li class="category-item active">
+            <div class="background-active">
+              <img class="category-item-icon-active" src="assets/icons/inbox.png" alt="Options" class="btn-icon-btn-icon-sm"></img>
+              <span class="category-item-title-active">Recibidos</span>
+            </div>
+            <span class="category-item-number-active" >1</span>
+          </li>
+
+          <li class="category-item">
+            <div>
+              <img class="category-item-icon" src="assets/img/send.svg" alt="Options" class="btn-icon-btn-icon-sm"></img>
+              <span class="category-item-title">Enviados</span>
+            </div>
+            <span class="category-item-number"></span>
+          </li>
+
+          <li class="category-item">
+            <div>
+              <img class="category-item-icon" src="assets/img/BasuraIcon.svg" alt="Options" class="btn-icon-btn-icon-sm"></img>
+              <span class="category-item-title">Eliminados</span>
+            </div>
+            <span class="category-item-number"></span>
+          </li>
+
+        </ul>
+      </div>
+
+    </section>
+    <!-- End Charlie Left Sidebar -->
+
+
+       <!-- Mario RIGHT SIDEBAR -->
+
+    <section class="app-container" >
+
+      <div class="app-group">
+
+        <div class="app-item">
+          <button class="btn">
+            <img src="assets/img/Files.svg" alt="Calendar" id="btn-icon-right" class="btn-icon btn-icon-sm">
+          </button>
+          <span class="span-right">Files</span>
+        </div>
+  
+        <div class="app-item">
+          <button class="btn">
+            <img src="assets/img/Sheets.svg" alt="Tasks" id="btn-icon-right" class="btn-icon btn-icon-sm">
+          </button>
+          <span class="span-right">Sheets</span>
+        </div>
+  
+        <div class="app-item">
+          <button class="btn">
+            <img src="assets/img/Slides.svg" alt="Contacts" id="btn-icon-right" class="btn-icon btn-icon-sm">
+          </button>
+          <span class="span-right">Slides</span>
+        </div>
+  
+        <div class="app-item">
+          <button class="btn">
+            <img src="assets/img/plus.svg" alt="" id="btn-icon-right" class="btn-icon btn-icon-sm">
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- End Mario RIGHT SIDEBAR -->
+
+      <!-- BODY -->
+
+      <section class="inbox" >
+      
+        <!-- MAIL -->
+  
+        <div class="inbox-menu">
+  
+          <div class="inbox-menu-group">
+  
+            <div class="inbox-btn-group" >
+              <button class="btn-alt">
+                <img src="assets/icons/check_select.png" alt="Select" class="btn-icon-sm">
+              </button>
+            </div>
+  
+          </div>
+  
+          <div class="inbox-menu-group">
+  
+            <button class="btn-lg btn-alt" >
+              <div class="inbox-menu-pagination">
+                1-50 de 262
+              </div>
+            </button>
+  
+            <div class="inbox-menu-pagination-btn">
+              <button class="btn btn-pagination">
+                <img src="assets/icons/arrow_back.png" alt="Newer" class="btn-icon-sm btn-icon-alt">
+              </button>
+  
+              <button class="btn btn-pagination">
+                <img src="assets/icons/arrow_forward.png" alt="Older" class="btn-icon-sm btn-icon-alt">
+              </button>
+            </div>
+  
+  
+          </div>
+  
+        </div>
+  
+        <div class="inbox-container">
+  
+          <!-- MAIL CONTENT -->
+          
+          <div class="content">
+            <div class="mail">
+                <div id="message-unread" class="inbox-message-item">
+  
+                  <div class="message-default" >
+  
+                    <div class="message-sender message-content unread" >
+                      <span >Dev.f</span>
+                    </div>
+        
+                    <div class="message-subject message-content unread">
+                      <span>Completaste tu master! ten tu papel!</span>
+                    </div>
+  
+                    <div class="message-seperator message-content"> - </div>
+  
+                    <div class="message-body message-content">
+                      <span> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta error beatae optio ea, quod harum. Iure ab sed, dolores eos repudiandae inventore magnam id modi blanditiis harum at. Facere, exercitationem.</span>
+                    </div>
+                    
+                    <div class="gap message-content" > </div>
+  
+                    <div class="message-date center-text unread" >
+                      <span>12:09 AM</span>
+                    </div>
+  
+                  </div>
+                </div>
+                
+                <div class="inbox-message-item  message-default-unread">
+  
+                  <div class="message-default" >
+  
+                    <div class="message-sender message-content" >
+                      <span >Microsoft</span>
+                    </div>
+        
+                    <div class="message-subject message-content">
+                      <span>Te la rifaste, contratado! Ven por tu dinero (No es estafa 100% real)</span>
+                    </div>
+  
+                    <div class="message-seperator message-content"> - </div>
+  
+                    <div class="message-body message-content">
+                      <span> Ven a la oficina en 1 semana, tendrás bono de 50K USD. Así nomas porque caes bien y te ves camarada</span>
+                    </div>
+                    
+                    <div class="gap message-content" > </div>
+  
+                    <div class="message-date center-text" >
+                      <span>4:23 PM</span>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="inbox-message-item  message-default-unread">
+                  <div class="message-default" >
+  
+                    <div class="message-sender message-content" >
+                      <span >Coppel</span>
+                    </div>
+        
+                    <div class="message-subject message-content">
+                      <span>Ya pagame no?? estás apunto de que te quiten todo lo que sacaste en la coppel jaja saludos cordiales </span>
+                    </div>  
+  
+                    <div class="message-seperator message-content"> - </div>
+  
+                    <div class="message-body message-content">
+                      <span> Hola cliente! Coppel te busca, debes 50K USD</span>
+                    </div>
+                    
+                    <div class="gap message-content" > </div>
+  
+                    <div class="message-date center-text" >
+                      <span>2:01 PM</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="inbox-message-item  message-default-unread">
+                  <div class="message-default" >
+  
+                    <div class="message-sender message-content" >
+                      <span >Coppel</span>
+                    </div>
+        
+                    <div class="message-subject message-content">
+                      <span>Ya pagame no?? estás apunto de que te quiten todo lo que sacaste en la coppel jaja saludos cordiales </span>
+                    </div>  
+  
+                    <div class="message-seperator message-content"> - </div>
+  
+                    <div class="message-body message-content">
+                      <span> Hola cliente! Coppel te busca, debes 50K USD</span>
+                    </div>
+                    
+                    <div class="gap message-content" > </div>
+  
+                    <div class="message-date center-text" >
+                      <span>2:01 PM</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="inbox-message-item  message-default-unread">
+                  <div class="message-default" >
+  
+                    <div class="message-sender message-content" >
+                      <span >Coppel</span>
+                    </div>
+        
+                    <div class="message-subject message-content">
+                      <span>Ya pagame no?? estás apunto de que te quiten todo lo que sacaste en la coppel jaja saludos cordiales </span>
+                    </div>  
+  
+                    <div class="message-seperator message-content"> - </div>
+  
+                    <div class="message-body message-content">
+                      <span> Hola cliente! Coppel te busca, debes 50K USD</span>
+                    </div>
+                    
+                    <div class="gap message-content" > </div>
+  
+                    <div class="message-date center-text" >
+                      <span>2:01 PM</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="inbox-message-item  message-default-unread">
+                  <div class="message-default" >
+  
+                    <div class="message-sender message-content" >
+                      <span >Coppel</span>
+                    </div>
+        
+                    <div class="message-subject message-content">
+                      <span>Ya pagame no?? estás apunto de que te quiten todo lo que sacaste en la coppel jaja saludos cordiales </span>
+                    </div>  
+  
+                    <div class="message-seperator message-content"> - </div>
+  
+                    <div class="message-body message-content">
+                      <span> Hola cliente! Coppel te busca, debes 50K USD</span>
+                    </div>
+                    
+                    <div class="gap message-content" > </div>
+  
+                    <div class="message-date center-text" >
+                      <span>2:01 PM</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="inbox-message-item  message-default-unread">
+                  <div class="message-default" >
+  
+                    <div class="message-sender message-content" >
+                      <span >Coppel</span>
+                    </div>
+        
+                    <div class="message-subject message-content">
+                      <span>Ya pagame no?? estás apunto de que te quiten todo lo que sacaste en la coppel jaja saludos cordiales </span>
+                    </div>  
+  
+                    <div class="message-seperator message-content"> - </div>
+  
+                    <div class="message-body message-content">
+                      <span> Hola cliente! Coppel te busca, debes 50K USD</span>
+                    </div>
+                    
+                    <div class="gap message-content" > </div>
+  
+                    <div class="message-date center-text" >
+                      <span>2:01 PM</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="inbox-message-item  message-default-unread">
+                  <div class="message-default" >
+  
+                    <div class="message-sender message-content" >
+                      <span >Coppel</span>
+                    </div>
+        
+                    <div class="message-subject message-content">
+                      <span>Ya pagame no?? estás apunto de que te quiten todo lo que sacaste en la coppel jaja saludos cordiales </span>
+                    </div>  
+  
+                    <div class="message-seperator message-content"> - </div>
+  
+                    <div class="message-body message-content">
+                      <span> Hola cliente! Coppel te busca, debes 50K USD</span>
+                    </div>
+                    
+                    <div class="gap message-content" > </div>
+  
+                    <div class="message-date center-text" >
+                      <span>2:01 PM</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="inbox-message-item  message-default-unread">
+                  <div class="message-default" >
+  
+                    <div class="message-sender message-content" >
+                      <span >Coppel</span>
+                    </div>
+        
+                    <div class="message-subject message-content">
+                      <span>Ya pagame no?? estás apunto de que te quiten todo lo que sacaste en la coppel jaja saludos cordiales </span>
+                    </div>  
+  
+                    <div class="message-seperator message-content"> - </div>
+  
+                    <div class="message-body message-content">
+                      <span> Hola cliente! Coppel te busca, debes 50K USD</span>
+                    </div>
+                    
+                    <div class="gap message-content" > </div>
+  
+                    <div class="message-date center-text" >
+                      <span>2:01 PM</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="inbox-message-item  message-default-unread">
+                  <div class="message-default" >
+  
+                    <div class="message-sender message-content" >
+                      <span >Coppel</span>
+                    </div>
+        
+                    <div class="message-subject message-content">
+                      <span>Ya pagame no?? estás apunto de que te quiten todo lo que sacaste en la coppel jaja saludos cordiales </span>
+                    </div>  
+  
+                    <div class="message-seperator message-content"> - </div>
+  
+                    <div class="message-body message-content">
+                      <span> Hola cliente! Coppel te busca, debes 50K USD</span>
+                    </div>
+                    
+                    <div class="gap message-content" > </div>
+  
+                    <div class="message-date center-text" >
+                      <span>2:01 PM</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="inbox-message-item  message-default-unread">
+                  <div class="message-default" >
+  
+                    <div class="message-sender message-content" >
+                      <span >Coppel</span>
+                    </div>
+        
+                    <div class="message-subject message-content">
+                      <span>Ya pagame no?? estás apunto de que te quiten todo lo que sacaste en la coppel jaja saludos cordiales </span>
+                    </div>  
+  
+                    <div class="message-seperator message-content"> - </div>
+  
+                    <div class="message-body message-content">
+                      <span> Hola cliente! Coppel te busca, debes 50K USD</span>
+                    </div>
+                    
+                    <div class="gap message-content" > </div>
+  
+                    <div class="message-date center-text" >
+                      <span>2:01 PM</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="inbox-message-item  message-default-unread">
+                  <div class="message-default" >
+  
+                    <div class="message-sender message-content" >
+                      <span >Coppel</span>
+                    </div>
+        
+                    <div class="message-subject message-content">
+                      <span>Ya pagame no?? estás apunto de que te quiten todo lo que sacaste en la coppel jaja saludos cordiales </span>
+                    </div>  
+  
+                    <div class="message-seperator message-content"> - </div>
+  
+                    <div class="message-body message-content">
+                      <span> Hola cliente! Coppel te busca, debes 50K USD</span>
+                    </div>
+                    
+                    <div class="gap message-content" > </div>
+  
+                    <div class="message-date center-text" >
+                      <span>2:01 PM</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="inbox-message-item  message-default-unread">
+                  <div class="message-default" >
+  
+                    <div class="message-sender message-content" >
+                      <span >Coppel</span>
+                    </div>
+        
+                    <div class="message-subject message-content">
+                      <span>Ya pagame no?? estás apunto de que te quiten todo lo que sacaste en la coppel jaja saludos cordiales </span>
+                    </div>  
+  
+                    <div class="message-seperator message-content"> - </div>
+  
+                    <div class="message-body message-content">
+                      <span> Hola cliente! Coppel te busca, debes 50K USD</span>
+                    </div>
+                    
+                    <div class="gap message-content" > </div>
+  
+                    <div class="message-date center-text" >
+                      <span>2:01 PM</span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+  <!-- BETTY FOOTER -->
+    <footer class="activity">
+      <div class="footer-container">
+        <div class="footer-item">
+          <span class="progressbar" ></span>
+          <a href="#" class="footer-link footer-text-sm">
+            <div class="footer-group">
+              <span> 0 GB de 15 GB ocupados</span> 
+            </div>
+          </a>
+        </div>
+        <div class="footer-item">
+          <a href="#`" class="footer-link footer-text-sm">Términos</a>
+          ·
+          <a href="#" class="footer-link footer-text-sm">Privacidad</a>
+          ·
+          <a href="#" class="footer-link footer-text-sm">Política del programa</a>
+        </div>
+        <div class="footer-item">
+          <span class="footer-text-sm" >Última actividad de la cuenta: hace 1 hora</span>
+          <div class="footer-group">
+            <a href="#" class="footer-link footer-text-sm">Detalles</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
+</section>
+</body>
+</html>
